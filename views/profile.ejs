@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/CSS" href="/stylesheets/profile.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="portfoliocard">
+        <div class="coverphoto"></div>
+        <div class="profile_picture"></div>
+        <div class="left_col">
+            <div class="followers">
+                <div class="follow_count">18,541</div>
+                Followers
+            </div>
+            <div class="following">
+                <div class="follow_count">181</div>
+                Following
+            </div>
+        </div>
+        <div class="right_col">
+            <h2 class="name"></h2>
+            <h3 class="location">India</h3>
+            <ul class="contact_information">
+                <li class="work"><%=user.fullName%></li>
+                <li class="work"><%=user.username%></li>
+                <li class="work"><%=user.role%></li>
+                <li class="mail"><%=user.email%></li>
+                <a href="/logout" class="lobtn">Log Out</a>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
